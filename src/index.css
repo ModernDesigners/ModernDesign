@@ -32,7 +32,7 @@ button {
   @apply w-[220px] h-[40px] rounded-md bg-main text-white shadow-backdrop shadow-mainBack2 transition duration-300 hover:shadow-none hover:bg-mainHover;
 }
 .decorBlock {
-  @apply absolute h-[300px] aspect-square rounded-[30px];
+  @apply absolute w-[80%] aspect-square rounded-[30px];
 }
 @keyframes dancingBlocks {
   0% {
