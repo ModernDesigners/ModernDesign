@@ -6,7 +6,10 @@ export default {
       colors: {
         white: "#FFF",
         main: "#1E6AFF",
-        mainBack: "#0047FF",
+        mainHover: "#4F8AFF",
+        mainBack: "rgba(31, 105, 255, 0.3)",
+        mainBack2: "rgba(31, 105, 255, 0.1)",
+        black6: "rgba(0, 0, 0, 0.60)",
         experienceBg: "#2563FF",
         cyan: "#3EB9FF",
         blue: "#3A6CFF",
@@ -29,6 +32,12 @@ export default {
       fontFamily: {
         main: ["mainGeo"],
         main2: ["mainEng"],
+      },
+      boxShadow: {
+        backdrop: "8px 8px 0",
+      },
+      animation: {
+        dancingBlocks: "dancingBlocks 2s infinite ease-in-out",
       },
     },
   },

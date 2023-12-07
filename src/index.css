@@ -16,11 +16,60 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   font-family: mainGeo;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
+}
+button {
+  outline: none;
 }
 .linearBg {
   background: linear-gradient(90deg, #002032 0%, #1c0032 100%);
 }
 .iconBg {
   background: linear-gradient(180deg, #0047ff 0%, #00b0ff 100%);
+  color: #3075ff;
+}
+.defButton {
+  @apply w-[220px] h-[40px] rounded-md bg-main text-white shadow-backdrop shadow-mainBack2 transition duration-300 hover:shadow-none hover:bg-mainHover;
+}
+.decorBlock {
+  @apply absolute h-[300px] aspect-square rounded-[30px];
+}
+@keyframes dancingBlocks {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(25px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.contentContainer {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .contentContainer {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .contentContainer {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .contentContainer {
+    width: 1170px;
+  }
+}
+@media (min-width: 1400px) {
+  .contentContainer {
+    width: 1350px;
+  }
 }

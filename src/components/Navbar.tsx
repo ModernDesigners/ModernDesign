@@ -9,8 +9,8 @@ export default function Navbar() {
     link: string;
   }[] = navLinks;
   return (
-    <nav className=" border-b-2 border-navLine h-[60px]">
-      <div className=" max-w-[1320px] m-auto  flex items-center justify-between h-full">
+    <nav className=" absolute w-full border-b-2 top-0 border-navLine h-[60px] z-10 bg-white">
+      <div className=" max-w-[1350px] px-[15px] m-auto  flex items-center justify-between h-full">
         <div className="h-[40px] logo flex justify-center items-center gap-3 iconBg cursor-pointer min-w-[220px] rounded-lg">
           {IiconBG}{" "}
           <p className=" font-main2 text-white tracking-wider">ModernDesign</p>
