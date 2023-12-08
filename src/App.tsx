@@ -1,11 +1,15 @@
 import Navbar from "./components/Navbar";
-import HeroSection from "./pages/home/HeroSection";
+import Experience from "./pages/home/Experience";
+import Hero from "./pages/home/Hero";
+import Projects from "./pages/home/Projects";
 
 function App() {
   return (
     <>
       <Navbar />
-      <HeroSection />
+      <Hero />
+      <Projects />
+      <Experience />
     </>
   );
 }

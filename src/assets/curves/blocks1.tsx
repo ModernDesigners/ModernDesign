@@ -1,4 +1,4 @@
-export default function blocks1(props: any) {
+export default function Blocks1(props: any) {
   return (
     <svg
       {...props}

@@ -1,8 +1,8 @@
-import Blocks1 from "../../assets/curves/blocks1";
-import DecorBlock from "../../assets/curves/decorBlock";
+import DecorBlock from "../../assets/curves/DecorBlock";
+import Blocks1 from "../../assets/curves/Blocks1";
 import { IarrowDown } from "../../assets/icons/icons";
 
-export default function HeroSection() {
+export default function Hero() {
   const diffBlocks = 50;
   const decorBlocks = [
     ["rgba(0, 71, 255, 0.60)"],
@@ -54,7 +54,7 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      <Blocks1 className="absolute w-full left-0 bottom-0 pointer-events-none" />
+      <Blocks1 className="absolute w-full left-0 bottom-0 pointer-events-none objCurves" />
     </div>
   );
 }

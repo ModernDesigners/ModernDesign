@@ -20,8 +20,9 @@ export const IarrowDown = (
     />
   </svg>
 );
-export const Iclock = (
+export const Iclock = (props: any) => (
   <svg
+    {...props}
     width="24"
     height="24"
     viewBox="0 0 24 24"
@@ -117,8 +118,9 @@ export const Iinstagram = (
     />
   </svg>
 );
-export const Istar = (
+export const Istar = (props: any) => (
   <svg
+    {...props}
     width="17"
     height="17"
     viewBox="0 0 17 17"
