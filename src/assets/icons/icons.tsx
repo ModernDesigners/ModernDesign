@@ -1,11 +1,3 @@
-import arrowDown from "./arrowDown.svg";
-import clock from "./clock.svg";
-import facebook from "./facebook.svg";
-import iconBG from "./iconBG.svg";
-import info from "./info.svg";
-import instagram from "./instagram.svg";
-import star from "./star.svg";
-
 export const IarrowDown = (
   <svg
     width="21"
@@ -32,26 +24,26 @@ export const Iclock = (props: any) => (
     <path
       d="M17.2 20.0499C15.75 20.9499 14.1 21.4999 12.25 21.4999C7.15 21.4999 3 17.3499 3 12.2499C3 10.5999 3.45 8.9999 4.2 7.6499"
       stroke="white"
-      stroke-width="2"
-      stroke-miterlimit="10"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeMiterlimit="10"
+      strokeLinecap="round"
+      troke-miterlimit="round"
     />
     <path
       d="M6.70001 4.85C8.25001 3.7 10.2 3 12.25 3C17.35 3 21.5 7.15 21.5 12.25C21.5 13.9 21.05 15.45 20.3 16.8"
       stroke="white"
-      stroke-width="2"
-      stroke-miterlimit="10"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeMiterlimit="10"
+      strokeLinecap="round"
+      troke-miterlimit="round"
     />
     <path
       d="M11.5 7V13H15.5"
       stroke="white"
-      stroke-width="2"
-      stroke-miterlimit="10"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeMiterlimit="10"
+      strokeLinecap="round"
+      troke-miterlimit="round"
     />
   </svg>
 );
@@ -81,17 +73,18 @@ export const IiconBG = (
       d="M5 11C5 9.11438 5 8.17157 5.58579 7.58579C6.17157 7 7.11438 7 9 7H11V27H9C7.11438 27 6.17157 27 5.58579 26.4142C5 25.8284 5 24.8856 5 23V11Z"
       fill="white"
     />
-    <rect x="11" y="7" width="6" height="20" fill="white" fill-opacity="0.8" />
-    <rect x="17" y="7" width="6" height="20" fill="white" fill-opacity="0.6" />
+    <rect x="11" y="7" width="6" height="20" fill="white" fillOpacity="0.8" />
+    <rect x="17" y="7" width="6" height="20" fill="white" fillOpacity="0.6" />
     <path
       d="M23 7H25C26.8856 7 27.8284 7 28.4142 7.58579C29 8.17157 29 9.11438 29 11V23C29 24.8856 29 25.8284 28.4142 26.4142C27.8284 27 26.8856 27 25 27H23V7Z"
       fill="white"
-      fill-opacity="0.4"
+      fillOpacity="0.4"
     />
   </svg>
 );
-export const Iinfo = (
+export const Iinfo = (props: any) => (
   <svg
+    {...props}
     width="16"
     height="16"
     viewBox="0 0 16 16"

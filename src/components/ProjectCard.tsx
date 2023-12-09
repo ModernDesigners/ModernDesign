@@ -6,7 +6,7 @@ export default function ProjectCard(props: { image: string }) {
         src={props.image}
         alt="projectImage"
       />
-      <div className="absolute transition-opacity h-full w-full top-0 left-0 z-10 bg-gradient-to-b from-transparent via-transparent to-opaBlack"></div>
+      <div className="absolute transition-opacity duration-300 h-full w-full top-0 left-0 z-10 bg-gradient-to-b from-transparent via-transparent to-opaBlack"></div>
     </div>
   );
 }

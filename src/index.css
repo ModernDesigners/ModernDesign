@@ -10,6 +10,9 @@
   font-family: mainEng;
   src: url("assets/fonts/Poppins-SemiBold.ttf");
 }
+body {
+  line-height: inherit;
+}
 * {
   padding: 0;
   margin: 0;
@@ -17,6 +20,15 @@
   -webkit-font-smoothing: antialiased;
   font-family: mainGeo;
   letter-spacing: 1.5px;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  background-color: #e6e6e6;
+  border-radius: 2px;
+}
+*::-webkit-scrollbar-thumb {
+  @apply bg-main rounded-sm;
 }
 button {
   outline: none;
@@ -34,6 +46,9 @@ button {
 }
 .decorBlock {
   @apply absolute w-[80%] aspect-square rounded-[30px];
+}
+.ruledOption {
+  @apply text-subWhite line-through;
 }
 @keyframes dancingBlocks {
   0% {
@@ -74,3 +89,8 @@ button {
     width: 1350px;
   }
 }
+/* @media (min-width: 1500px) {
+  .contentContainer {
+    width: 1440px;
+  }
+} */

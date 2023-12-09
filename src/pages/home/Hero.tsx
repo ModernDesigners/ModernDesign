@@ -14,7 +14,7 @@ export default function Hero() {
   return (
     <div className="heroSection relative overflow-hidden">
       <div className="contentContainer">
-        <div className=" flex items-center min-h-screen pb-56 ">
+        <div className=" flex items-center min-h-screen  pb-56">
           <div className=" w-[50%]  flex flex-col gap-6">
             <div className="flex flex-col gap-[14px]">
               <p className="text-black text-4xl">

@@ -17,10 +17,10 @@ interface IProject {
 
 export default function Projects() {
   return (
-    <div className="ProjectsSection relative pt-48 pb-72 min-h-screen overflow-hidden">
-      <Blocks2 className="absolute w-full left-0 top-0 pointer-events-none objCurves" />
-      <div className="contentContainer">
-        <h1 className=" text-center text-mainHover text-5xl">პროექტები</h1>
+    <div className="ProjectsSection relative min-h-screen overflow-hidden">
+      <Blocks2 className="w-full pointer-events-none objCurves" />
+      <div className="contentContainer my-12">
+        <h1 className=" text-center text-mainHover text-[40px]">პროექტები</h1>
 
         <div className="flex gap-10 justify-center mt-16 flex-wrap">
           {ProjectsArray.map((e: IProject, i: number) =>
@@ -29,7 +29,7 @@ export default function Projects() {
         </div>
         <button className="defButton block m-auto mt-10">ყველას ნახვა</button>
       </div>
-      <Waves1 className="absolute w-full left-0 bottom-0 pointer-events-none objCurves" />
+      <Waves1 className="w-full pointer-events-none objCurves" />
     </div>
   );
 }

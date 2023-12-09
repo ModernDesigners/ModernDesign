@@ -9,7 +9,7 @@ export default function Navbar() {
     link: string;
   }[] = navLinks;
   return (
-    <nav className=" absolute w-full border-b-2 top-0 border-navLine h-[60px] z-10 bg-white">
+    <nav className=" w-full border-b-2 top-0 border-navLine h-[60px] z-10 bg-white">
       <div className=" max-w-[1350px] px-[15px] m-auto  flex items-center justify-between h-full">
         <div className="h-[40px] logo flex justify-center items-center gap-3 iconBg cursor-pointer min-w-[220px] rounded-lg">
           {IiconBG}{" "}

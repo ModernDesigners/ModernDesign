@@ -6,7 +6,7 @@ export default function Waves1(props: any) {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_3_144)">
+      <g clipPath="url(#clip0_3_144)">
         <path
           d="M0 104.4L48 95.7C96 87 192 69.5999 288 58C384 46.4 480 40.6 576 58C672 75.3999 768 116 864 110.2C960 104.4 1056 52.2 1152 43.5C1248 34.8 1344 69.5999 1440 89.8999C1536 110.2 1632 116 1728 98.6C1824 81.2 1920 40.6 2016 29C2112 17.4 2208 34.8 2304 34.8C2400 34.8 2496 17.4 2592 31.9C2688 46.4 2784 92.7999 2880 92.7999C2976 92.7999 3072 46.4 3168 49.2999C3264 52.2 3360 104.4 3456 127.6C3552 150.8 3648 145 3744 142.1C3840 139.2 3936 139.2 4032 116C4128 92.7999 4224 46.4 4320 34.8C4416 23.2 4512 46.4 4608 63.7999C4704 81.2 4800 92.7999 4896 92.7999C4992 92.7999 5088 81.2 5184 78.2999C5280 75.3999 5376 81.2 5472 89.8999C5568 98.6 5664 110.2 5760 104.4C5856 98.6 5952 75.3999 6048 75.3999C6144 75.3999 6240 98.6 6336 92.7999C6432 87 6528 52.2 6624 58C6720 63.7999 6816 110.2 6864 133.4L6912 156.6V174H6864C6816 174 6720 174 6624 174C6528 174 6432 174 6336 174C6240 174 6144 174 6048 174C5952 174 5856 174 5760 174C5664 174 5568 174 5472 174C5376 174 5280 174 5184 174C5088 174 4992 174 4896 174C4800 174 4704 174 4608 174C4512 174 4416 174 4320 174C4224 174 4128 174 4032 174C3936 174 3840 174 3744 174C3648 174 3552 174 3456 174C3360 174 3264 174 3168 174C3072 174 2976 174 2880 174C2784 174 2688 174 2592 174C2496 174 2400 174 2304 174C2208 174 2112 174 2016 174C1920 174 1824 174 1728 174C1632 174 1536 174 1440 174C1344 174 1248 174 1152 174C1056 174 960 174 864 174C768 174 672 174 576 174C480 174 384 174 288 174C192 174 96 174 48 174H0V104.4Z"
           fill="url(#paint0_linear_3_144)"
@@ -31,8 +31,8 @@ export default function Waves1(props: any) {
           y2="174"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#46F4FF" />
-          <stop offset="1" stop-color="#2562FF" />
+          <stop stopColor="#46F4FF" />
+          <stop offset="1" stopColor="#2562FF" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_3_144"
@@ -42,8 +42,8 @@ export default function Waves1(props: any) {
           y2="174"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#46F4FF" />
-          <stop offset="1" stop-color="#2562FF" />
+          <stop stopColor="#46F4FF" />
+          <stop offset="1" stopColor="#2562FF" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_3_144"
@@ -53,8 +53,8 @@ export default function Waves1(props: any) {
           y2="174"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#46F4FF" />
-          <stop offset="1" stop-color="#2562FF" />
+          <stop stopColor="#46F4FF" />
+          <stop offset="1" stopColor="#2562FF" />
         </linearGradient>
         <clipPath id="clip0_3_144">
           <rect width="1440" height="174" fill="white" />

@@ -21,8 +21,8 @@ export default function Blocks1(props: any) {
           y2="272"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#68EBFF" />
-          <stop offset="1" stop-color="#1E6AFF" />
+          <stop stopColor="#68EBFF" />
+          <stop offset="1" stopColor="#1E6AFF" />
         </linearGradient>
       </defs>
     </svg>
