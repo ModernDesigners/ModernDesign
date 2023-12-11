@@ -1,0 +1,23 @@
+*::-webkit-scrollbar-thumb {
+  @apply bg-main rounded-sm;
+}
+
+.defButton {
+  @apply w-[220px] h-[40px] rounded-md bg-main text-white shadow-backdrop shadow-mainBack2 transition duration-300 hover:shadow-none hover:bg-mainHover;
+}
+.decorBlock {
+  @apply absolute w-[80%] aspect-square rounded-[30px];
+}
+.ruledOption {
+  @apply text-subWhite line-through;
+}
+.inputBlock {
+  @apply text-mainWhite flex flex-col justify-center text-center gap-3;
+}
+
+.inputStyle {
+  @apply bg-inputBg border-2 border-inputBorder rounded-md outline-none px-2 py-1 transition caret-mainWhite;
+}
+.inputStyle:focus {
+  @apply bg-inputBgHover;
+}

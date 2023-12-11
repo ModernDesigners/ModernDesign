@@ -4,6 +4,7 @@ import Experience from "./pages/home/Experience";
 import Hero from "./pages/home/Hero";
 import Projects from "./pages/home/Projects";
 import Service from "./pages/home/Service";
+import Footer from "./pages/home/components/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Experience />
       <Service />
       <Contact />
+      <Footer />
     </>
   );
 }

@@ -27,9 +27,7 @@ body {
   background-color: #e6e6e6;
   border-radius: 2px;
 }
-*::-webkit-scrollbar-thumb {
-  @apply bg-main rounded-sm;
-}
+
 button {
   outline: none;
 }
@@ -40,27 +38,6 @@ button {
 .iconBg {
   background: linear-gradient(180deg, #0047ff 0%, #00b0ff 100%);
   color: #3075ff;
-}
-.defButton {
-  @apply w-[220px] h-[40px] rounded-md bg-main text-white shadow-backdrop shadow-mainBack2 transition duration-300 hover:shadow-none hover:bg-mainHover;
-}
-.decorBlock {
-  @apply absolute w-[80%] aspect-square rounded-[30px];
-}
-.ruledOption {
-  @apply text-subWhite line-through;
-}
-@keyframes dancingBlocks {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(25px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
 }
 
 .contentContainer {

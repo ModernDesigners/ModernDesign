@@ -17,7 +17,7 @@ interface IProject {
 
 export default function Projects() {
   return (
-    <div className="ProjectsSection relative min-h-screen overflow-hidden">
+    <div className="ProjectsSection relative min-h-screen overflow-hidden pb-56">
       <Blocks2 className="w-full pointer-events-none objCurves" />
       <div className="contentContainer my-12">
         <h1 className=" text-center text-mainHover text-[40px]">პროექტები</h1>
@@ -29,7 +29,7 @@ export default function Projects() {
         </div>
         <button className="defButton block m-auto mt-10">ყველას ნახვა</button>
       </div>
-      <Waves1 className="w-full pointer-events-none objCurves" />
+      <Waves1 className="w-full pointer-events-none absolute bottom-0 objCurves" />
     </div>
   );
 }

@@ -17,7 +17,7 @@ export interface IServiceCard {
 
 export default function Service() {
   return (
-    <div className="ServiceSection relative bg-gradient-to-r from-[#002032] to-[#1C0032] min-h-screen">
+    <div className="ServiceSection relative bg-gradient-to-r from-[#002032] to-[#1C0032] min-h-screen pb-56">
       <Waves2 />
       <div className="contentContainer my-10">
         <h1 className="text-white text-center text-[40px] tracking">
@@ -49,7 +49,7 @@ export default function Service() {
           </div>
         </div>
       </div>
-      <Waves3 className="w-full" />
+      <Waves3 className="w-full absolute bottom-0" />
     </div>
   );
 }
