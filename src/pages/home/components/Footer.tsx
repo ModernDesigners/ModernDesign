@@ -1,26 +1,29 @@
+import FooterDecor from "../../../components/FooterDecor";
+
 export default function Footer() {
   return (
     <footer className=" bg-[#0A091D] relative">
+      <FooterDecor className="top-0 translate-y-[-50%]" />
       <div className="contentContainer">
         <div className="flex w-full justify-between pt-28">
-          <div className="flex flex-col gap-1 [&>p]:text-subWhite [&>p]:max-w-[270px]">
+          <div className="flex flex-col gap-1 [&>p]:text-subWhite  [&>p]:max-w-[270px]">
             <h3 className="text-white text-xl mb-3">ჩვენს შესახებ</h3>
             <p>ჩვენ დაგეხმარებით ვებგვერდის დამზადებაში და მის გამართვაში</p>
           </div>
-          <div className="flex flex-col gap-1 [&>p]:text-subWhite">
+          <div className="flex flex-col gap-1 [&>p]:text-subWhite [&>p]:transition-colors [&>p]:cursor-pointer hover:[&>p]:text-mainWhite">
             <h3 className="text-white text-xl mb-3">კონტაქტი</h3>
             <p>მესიჯი</p>
             <p>FACEBOOK</p>
             <p>INSTAGRAM</p>
           </div>
-          <div className="flex flex-col gap-1 [&>p]:text-subWhite">
+          <div className="flex flex-col gap-1 [&>p]:text-subWhite [&>p]:transition-colors [&>p]:cursor-pointer hover:[&>p]:text-mainWhite">
             <h3 className="text-white text-xl mb-3">სერვისები</h3>
             <p>სტარტერი</p>
             <p>ექსპო</p>
             <p>ბიზნეს</p>
             <p>შეთანხმებით</p>
           </div>
-          <div className="flex flex-col gap-1 [&>p]:text-subWhite">
+          <div className="flex flex-col gap-1 [&>p]:text-subWhite [&>p]:transition-colors [&>p]:cursor-pointer hover:[&>p]:text-mainWhite">
             <h3 className="text-white text-xl mb-3">ნავიგაცია</h3>
             <p>მთავარი</p>
             <p>პროექტები</p>

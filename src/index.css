@@ -24,8 +24,8 @@ body {
 
 *::-webkit-scrollbar {
   width: 8px;
-  background-color: #e6e6e6;
-  border-radius: 2px;
+  background: rgba(206, 206, 206, 0.557);
+  display: none;
 }
 
 button {
@@ -66,8 +66,8 @@ button {
     width: 1350px;
   }
 }
-/* @media (min-width: 1500px) {
+@media (min-width: 1500px) {
   .contentContainer {
     width: 1440px;
   }
-} */
+}
