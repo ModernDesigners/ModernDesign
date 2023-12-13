@@ -54,6 +54,16 @@ export default {
       dropShadow: {
         stars: "0px 0px 10px rgba(70, 244, 255, 0.50)",
       },
+      screens: {
+        // "2xl": { max: "1750px" },
+        // xl: { max: "1440px" },
+        // xls: { max: "1279px" },
+        // lg: { max: "991px" },
+        md: { max: "771px" },
+        sm: { max: "590px" },
+        // sm2: { max: "510px" },
+        // mobile: { max: "450px" },
+      },
     },
   },
   plugins: [],
