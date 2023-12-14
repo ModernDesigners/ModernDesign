@@ -23,17 +23,19 @@ export default function Service() {
         <h1 className="text-white text-center text-[40px] tracking">
           სერვისები
         </h1>
-        <div className=" flex gap-12 justify-between items-center mt-16 mb-16 flex-wrap">
+        <div className=" flex gap-12 justify-between items-center mt-16 mb-16 flex-wrap md:px-5">
           {ServiceList.map((e: IServiceCard, i: number) => (
             <ServiceCard key={i} {...e} />
           ))}
         </div>
         <div className=" bg-cardBg border-2 rounded-xl border-cardBorder py-6 px-4 ">
-          <div className=" inline-flex items-center px-6 py-2 pl-4 rounded-xl bg-yellowBg text-yellow">
-            <Iinfo className=" stroke-yellow mr-[14px]" /> გაითვალისწინეთ
+          <div className="w-full sm:flex sm:justify-center">
+            <div className=" inline-flex items-center px-6 py-2 pl-4 rounded-xl bg-yellowBg text-yellow ">
+              <Iinfo className=" stroke-yellow mr-[14px] " /> გაითვალისწინეთ
+            </div>
           </div>
-          <div className="flex flex-col gap-5 mt-5">
-            <p className="text-mainWhite">
+          <div className="flex flex-col gap-5 mt-5 sm:text-center">
+            <p className="text-mainWhite ">
               შეკვეთის დამზადების დრო განისაზღვრება მისი მოცულობით, დეტალებით და
               გვერდების რაოდენობით შეკვეთის ორ დღიან გადაცილებაზე თანხა უკან
               გიბრუნდებათ

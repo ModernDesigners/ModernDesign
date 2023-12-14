@@ -1,7 +1,7 @@
 export default function FooterDecor(props: { className?: string }) {
   return (
     <div
-      className={`flex left-0 absolute w-full items-center justify-center overflow-x-clip ${props.className}`}
+      className={`flex left-0 absolute w-full items-center justify-center overflow-x-clip ${props.className} 3xl:hidden`}
     >
       <div className=" flex items-center justify-center absolute w-[350px] aspect-square rotate-45 bg-[#3EB9FF] left-0 translate-x-[-50%] z-10">
         <div className=" bg-[#006CA9] rounded-tr-2xl h-[80%] aspect-square"></div>

@@ -10,7 +10,7 @@ export default function ServiceCard({
 }: IServiceCard) {
   return (
     <div
-      className=" h-[480px] min-w-[250px] w-[280px] bg-cardBg border-2 rounded-xl border-cardBorder py-6 px-4  flex-[1] relative transition-all duration-300 ease-in-out overflow-hidden hover:flex-[2] "
+      className=" h-[480px] min-w-[250px] w-[280px] bg-cardBg border-2 rounded-xl border-cardBorder py-6 px-4  flex-[1] relative transition-all duration-300 ease-in-out overflow-hidden hover:flex-[2] 2xl:hover:flex-[1] 2xl:min-w-[45%] md:!min-w-full  "
       style={{ boxShadow: `15px 15px 0 ${shadowColor}` }}
     >
       <h3
