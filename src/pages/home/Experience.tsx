@@ -17,14 +17,14 @@ export default function Experience() {
           <h1 className="text-white text-2xl pr-8">გამოცდილება</h1>
           <div className="h-1 w-full bg-mainWhite rounded-xl translate-y-[3px]"></div>
         </div>
-        <div className="flex items-center justify-between mt-10">
+        <div className="flex items-center justify-between mt-10 md:w-[90%] md:m-auto md:mt-20">
           <Istar className=" [&>path]:fill-cyanDecor drop-shadow-stars rotate-45 -translate-x-6" />
           <Istar className=" [&>path]:fill-cyanDecor drop-shadow-stars -rotate-45 translate-x-6" />
         </div>
 
-        <div className="flex mt-20">
-          <div className="text-mainWhiteT [&>div>p]:mb-3 [&>div>p]:max-w-[550px] w-[50%] flex flex-col justify-between">
-            <div className="">
+        <div className="flex mt-20 xl:flex-col xl:items-center text-center  ">
+          <div className="text-mainWhiteT [&>div>p]:mb-3 [&>div>p]:max-w-[550px] xl:max-w-full xl:w-full w-[50%] flex flex-col justify-between">
+            <div className="flex flex-col items-center">
               <p>3 წლიანი გამოცდილება ვებ-დეველოპმენტში</p>
               <p>სამუშაო გამოცდილება გუნდურ, სატესტო და რეალურ პროექტებზე.</p>
               <p>
@@ -37,28 +37,28 @@ export default function Experience() {
               </p>
             </div>
 
-            <div className="flex gap-4 flex-col">
-              <div className="flex items-center text-white tracking-widest">
-                <div className=" h-9 aspect-square rounded-full bg-cardBg flex justify-center items-center mr-3 ">
+            <div className="flex gap-4 flex-col xl:items-center xl:mt-20 xl:mb-20">
+              <div className="flex items-center text-white tracking-widest sm:justify-between  w-full">
+                <div className=" h-9 aspect-square rounded-full bg-cardBg flex justify-center items-center mr-3 sm:w-10 ">
                   <Iclock className="[&>path]:stroke-cyanDecor" />
                 </div>
-                სწრაფი მომსახურება
+                <p className=" w-full">სწრაფი მომსახურება</p>
               </div>
-              <div className="flex items-center text-white tracking-widest">
-                <div className=" h-9 aspect-square rounded-full bg-cardBg flex justify-center items-center mr-3 ">
+              <div className="flex items-center text-white tracking-widest sm:justify-between  w-full">
+                <div className=" h-9 aspect-square rounded-full bg-cardBg flex justify-center items-center mr-3 sm:w-10 ">
                   <Istar className="[&>path]:fill-cyanDecor" />
                 </div>
-                ოპტიმიზირებული/სწრაფი პროექტები
+                <p className=" w-full">ოპტიმიზირებული/სწრაფი პროექტები</p>
               </div>
             </div>
           </div>
-          <div className="flex justify-center min-h-full w-[50%]">
-            <div className=" min-w-[90%] w-[550px] bg-cardBg border-2 border-cardBorder rounded-lg py-10 px-16">
+          <div className="flex justify-center min-h-full w-[50%] lg:w-[90%]">
+            <div className=" min-w-[90%] w-[550px] bg-cardBg border-2 border-cardBorder rounded-lg py-10 px-16 sm:px-5">
               <p className="text-center text-white text-lg">
                 ტექნოლოგიები რომლებთანაც გვიმუშავია
               </p>
-              <div className=" w-14 h-[3px] rounded-lg bg-lineWhite mx-auto my-5"></div>
-              <div className="flex flex-wrap justify-center gap-5">
+              <div className=" w-14  h-[3px] rounded-lg bg-lineWhite mx-auto my-5 "></div>
+              <div className="flex flex-wrap justify-center gap-5   ">
                 {TechnologyList.map((e: ITechnology, i: number) => (
                   <LangIcon
                     key={i}

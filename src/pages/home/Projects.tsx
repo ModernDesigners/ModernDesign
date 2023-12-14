@@ -23,9 +23,9 @@ export default function Projects() {
         <h1 className=" text-center text-mainHover text-[40px]">პროექტები</h1>
 
         <div className="flex gap-10 justify-center mt-16 flex-wrap">
-          {ProjectsArray.map((e: IProject, i: number) =>
-            i < 9 ? <ProjectCard key={i} image={e.image} /> : null
-          )}
+          {ProjectsArray.slice(0, 9).map((e: IProject, i: number) => (
+            <ProjectCard key={i} image={e.image} />
+          ))}
         </div>
         <button className="defButton block m-auto mt-10">ყველას ნახვა</button>
       </div>

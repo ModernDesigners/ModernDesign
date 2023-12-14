@@ -57,8 +57,8 @@ export default {
       screens: {
         // "2xl": { max: "1750px" },
         // xl: { max: "1440px" },
-        // xls: { max: "1279px" },
-        // lg: { max: "991px" },
+        xl: { max: "1068px" },
+        lg: { max: "992px" },
         md: { max: "771px" },
         sm: { max: "590px" },
         // sm2: { max: "510px" },

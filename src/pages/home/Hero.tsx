@@ -14,7 +14,7 @@ export default function Hero() {
   return (
     <div className="heroSection relative overflow-hidden">
       <div className="contentContainer">
-        <div className=" flex items-center min-h-screen sm:min-h-full pb-56  sm:flex-col md:mt-[65px] sm:!mt-[130px]  sm:text-center sm:pb-0 ">
+        <div className=" flex items-center min-h-screen sm:min-h-full pb-56  sm:flex-col md:mt-[65px] sm:!mt-[130px]  sm:text-center sm:pb-[160px]">
           <div className=" w-[50%]  flex flex-col gap-6 sm:w-[70%] ">
             <div className="flex flex-col gap-[14px]">
               <p className="text-black text-4xl">
@@ -43,7 +43,7 @@ export default function Hero() {
                 <DecorBlock
                   key={i}
                   col={e[0]}
-                  className="decorBlock animate-dancingBlocks"
+                  className="decorBlock animate-dancingBlocks "
                   style={{
                     top: i * diffBlocks - 200 + "px",
                     animationDelay: i * 200 + "ms",
@@ -54,7 +54,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <Blocks1 className="absolute w-full left-0 bottom-0 pointer-events-none objCurves sm:hidden" />
+      <Blocks1 className="absolute w-full left-0 bottom-0 pointer-events-none objCurves " />
     </div>
   );
 }

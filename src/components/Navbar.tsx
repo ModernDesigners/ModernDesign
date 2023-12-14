@@ -14,13 +14,13 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`w-full border-b-2 top-0 border-navLine h-[65px]  z-10 transition-all  bg-white md:fixed md:overflow-hidden md:pb-3 ${
-        isNavbarOpen ? "!h-[410px]" : ""
+      className={`w-full border-b-2 top-0 border-navLine h-[65px]  z-10 transition-all  bg-white md:fixed md:z-50 md:overflow-hidden md:pb-3 ${
+        isNavbarOpen ? "!h-[340px]" : ""
       } `}
     >
       <div
         onClick={() => setIsNavbarOpen((state) => !state)}
-        className=" h-9 aspect-square absolute top-4 right-5 items-center z-30 flex-col gap-[10px] hidden lg:flex md:flex"
+        className=" h-9 aspect-square absolute top-4 right-5  items-center z-30 flex-col gap-[10px] hidden  md:flex"
       >
         <span
           className={`block w-full h-[2px] transition-transform duration-150 bg-mainBlack ${
@@ -44,7 +44,7 @@ export default function Navbar() {
           {IiconBG}
           <p className=" font-main2 text-white tracking-wider">ModernDesign</p>
         </div>
-        <ul className="  inline-flex items-center gap-7 md:flex-col">
+        <ul className="  inline-flex items-center gap-7 md:flex-col md:gap-2">
           {navButtons.map((e, i) => (
             <li
               onClick={() => setIsNavbarOpen(false)}
