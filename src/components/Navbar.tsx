@@ -10,7 +10,6 @@ export default function Navbar() {
   }[] = navLinks;
 
   const [isNavbarOpen, setIsNavbarOpen] = useState<boolean>(false);
-  console.log(isNavbarOpen);
 
   return (
     <nav

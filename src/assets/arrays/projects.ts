@@ -25,6 +25,7 @@ const ProjectsArray = [
     LiveLink: "",
     GitLink: "",
     Team: 0,
+    showImages: [""],
   },
   {
     PName: "DASHBOARD",
@@ -35,6 +36,7 @@ const ProjectsArray = [
     LiveLink: "",
     GitLink: "",
     Team: 0,
+    showImages: [""],
   },
   {
     PName: "GESHOP",
@@ -55,6 +57,7 @@ const ProjectsArray = [
     LiveLink: "",
     GitLink: "",
     Team: 0,
+    showImages: [""],
   },
   // {
   //   PName: "GAME SHOP",
@@ -65,6 +68,7 @@ const ProjectsArray = [
   //   LiveLink: "",
   //   GitLink: "",
   //   Team: 0,
+  //   showImages:[""]
   // },
   {
     PName: "CAMP WEB",
@@ -75,6 +79,7 @@ const ProjectsArray = [
     LiveLink: "https://lukafexshvelashvili.github.io/CampWebsite-React-TS/",
     GitLink: "https://github.com/LukaFexshvelashvili/CampWebsite-React-TS",
     Team: 0,
+    showImages: [""],
   },
   {
     PName: "BOOK STORE",
@@ -85,6 +90,7 @@ const ProjectsArray = [
     LiveLink: "https://lukafexshvelashvili.github.io/BookStoreWebsite/",
     GitLink: "https://github.com/LukaFexshvelashvili/BookStoreWebsite",
     Team: 0,
+    showImages: [""],
   },
   {
     PName: "JAEGAR RESTO",
@@ -95,6 +101,7 @@ const ProjectsArray = [
     LiveLink: "https://moderndesigners.github.io/Food-Restaurant/",
     GitLink: "https://github.com/ModernDesigners/Food-Restaurant",
     Team: 1,
+    showImages: [""],
   },
   {
     PName: "MODERN WATCH",
@@ -105,6 +112,7 @@ const ProjectsArray = [
     LiveLink: "https://moderndesigners.github.io/ModernWatch/",
     GitLink: "https://github.com/ModernDesigners/ModernWatch",
     Team: 1,
+    showImages: [""],
   },
   {
     PName: "COLAB WEB",
@@ -115,6 +123,7 @@ const ProjectsArray = [
     LiveLink: "https://lukafexshvelashvili.github.io/ColabWebsite/",
     GitLink: "https://github.com/LukaFexshvelashvili/ColabWebsite",
     Team: 0,
+    showImages: [""],
   },
   // {
   //   PName: "REBOUND ROLEPLAY",
@@ -135,6 +144,7 @@ const ProjectsArray = [
   //   LiveLink: "https://reboundrp.net",
   //   GitLink: "",
   //   Team: 0,
+  //   showImages:[""]
   // },
   // {
   //   PName: "MODERN DESIGN",
@@ -153,6 +163,7 @@ const ProjectsArray = [
   //   LiveLink: "",
   //   GitLink: "",
   //   Team: 0,
+  //  showImages:[""]
   // },
   {
     PName: "COELUSO WEB",
@@ -163,6 +174,7 @@ const ProjectsArray = [
     LiveLink: "https://lukafexshvelashvili.github.io/CoelusoWebsite/",
     GitLink: "https://github.com/LukaFexshvelashvili/CoelusoWebsite",
     Team: 0,
+    showImages: [""],
   },
   {
     PName: "AUTO SERVICE",
@@ -173,6 +185,7 @@ const ProjectsArray = [
     LiveLink: "",
     GitLink: "",
     Team: 0,
+    showImages: [""],
   },
   {
     PName: "BRAVAY",
@@ -183,6 +196,7 @@ const ProjectsArray = [
     LiveLink: "https://lukafexshvelashvili.github.io/NFT-Landing-Page/",
     GitLink: "https://github.com/LukaFexshvelashvili/NFT-Landing-Page",
     Team: 0,
+    showImages: [""],
   },
   {
     PName: "EVENTOY",
@@ -193,6 +207,7 @@ const ProjectsArray = [
     LiveLink: "https://lukafexshvelashvili.github.io/Eventoy/",
     GitLink: "https://github.com/LukaFexshvelashvili/Eventoy",
     Team: 0,
+    showImages: [""],
   },
   {
     PName: "RATIONS",
@@ -203,6 +218,7 @@ const ProjectsArray = [
     LiveLink: "https://lukafexshvelashvili.github.io/Rations/",
     GitLink: "https://github.com/LukaFexshvelashvili/Rations",
     Team: 0,
+    showImages: [""],
   },
 ];
 

@@ -48,6 +48,7 @@ export default {
       boxShadow: {
         backdrop: "8px 8px 0",
         projectCard: "0px 0px 20px 0px rgba(0, 0, 0, 0.10)",
+        showImages: "0px 0px 40px 0px rgba(0, 0, 0, 0.25)",
       },
       animation: {
         dancingBlocks: "dancingBlocks 2s infinite ease-in-out",
