@@ -38,6 +38,8 @@ export default {
         mainBlack: "rgba(0, 0, 0, 0.80)",
         subBlack: "rgba(0, 0, 0, 0.60)",
         opaBlack: "rgba(0, 0, 0, 0.30)",
+        blueButtonTransparent: "rgba(30, 106, 255, 0.1)",
+        blueButton: "rgba(30, 106, 255, 1)",
       },
       fontFamily: {
         main: ["mainGeo"],

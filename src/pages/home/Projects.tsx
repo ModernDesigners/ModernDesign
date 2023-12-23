@@ -22,7 +22,7 @@ export default function Projects() {
       <div className="contentContainer my-12">
         <h1 className=" text-center text-mainHover text-[40px]">პროექტები</h1>
 
-        <div className="flex gap-10 justify-center mt-16 flex-wrap">
+        <div className="flex gap-3 justify-center mt-16 flex-wrap md:gap-3">
           {ProjectsArray.slice(0, 9).map((e: IProject, i: number) => (
             <ProjectCard key={i} image={e.image} />
           ))}
