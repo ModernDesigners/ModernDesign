@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { IiconBG } from "../assets/icons/icons";
 import navLinks from "./Navlinks";
 import { Link } from "react-router-dom";
+import { userContext } from "../App";
 
 export default function Navbar() {
-  const [navActive, setNavActive] = useState(0);
+  const navActions = useContext(userContext);
   const navButtons: {
     name: string;
     link: string;
@@ -40,25 +41,33 @@ export default function Navbar() {
       </div>
 
       <div className="max-w-[1350px] px-[15px] m-auto  flex items-center justify-between h-full md:flex-col md:pt-3 ">
-        <div className="min-h-[40px]   logo flex justify-center items-center gap-3 iconBg cursor-pointer min-w-[220px] rounded-lg ">
-          {IiconBG}
-          <p className=" font-main2 text-white tracking-wider">ModernDesign</p>
-        </div>
+        <Link to={"/Home"} onClick={() => navActions.setNavActive(0)}>
+          <div className="min-h-[40px]   logo flex justify-center items-center gap-3 iconBg cursor-pointer min-w-[220px] rounded-lg ">
+            {IiconBG}
+            <p className=" font-main2 text-white tracking-wider">
+              ModernDesign
+            </p>
+          </div>
+        </Link>
         <ul className="  inline-flex items-center gap-7 md:flex-col md:gap-2">
           {navButtons.map((e, i) => (
             <Link to={e.link}>
               <li
-                onClick={() => setIsNavbarOpen(false)}
+                onClick={() => {
+                  setIsNavbarOpen(false);
+                  navActions.setNavActive(i);
+                }}
                 className={` h-[60px] relative text-mainBlack flex  before:w-full items-center text-base before:transition-transform before:duration-300 before:origin-left before:content-[''] before:absolute before:bottom-0 before:h-[2px] rounded-lg before:rounded before:bg-main before:scale-x-0 ${
-                  navActive == i ? " before:scale-x-100" : " before:scale-x-0"
+                  navActions.navActive == i
+                    ? " before:scale-x-100"
+                    : " before:scale-x-0"
                 }`}
                 key={i}
               >
                 <p
                   className={` font-semibold cursor-pointer transition-colors duration-300 ${
-                    navActive == i ? "text-main" : ""
+                    navActions.navActive == i ? "text-main" : ""
                   }`}
-                  onClick={() => setNavActive(i)}
                 >
                   {e.name}
                 </p>

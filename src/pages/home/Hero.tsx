@@ -1,5 +1,6 @@
+import { Link } from "react-router-dom";
 import DecorBlock from "../../assets/curves/DecorBlock";
-import Blocks1 from "../../assets/curves/blocks1";
+import Blocks1 from "../../assets/curves/Blocks1";
 import { IarrowDown } from "../../assets/icons/icons";
 
 export default function Hero() {
@@ -30,11 +31,16 @@ export default function Hero() {
                 ჩვენს შესახებ
               </button>
             </div>
-            <div className="cursor-pointer [&>div>svg>path]:animate-pulse flex items-center mt-5 text-black6 sm:mt-0 sm:justify-center ">
-              <div className=" h-8 aspect-square rounded-full bg-mainBack2 flex items-center justify-center [&>svg>path]:fill-mainHover mr-4">
-                {IarrowDown}
-              </div>
-              <p className="">პროექტების ნახვა</p>
+            <div className=" mt-5 text-black6 sm:mt-0  inline-flex">
+              <Link
+                to={"/Projects"}
+                className="cursor-pointer [&>div>svg>path]:animate-pulse flex items-center sm:justify-center"
+              >
+                <div className=" h-8 aspect-square rounded-full bg-mainBack2 flex items-center justify-center [&>svg>path]:fill-mainHover mr-4">
+                  {IarrowDown}
+                </div>
+                <p className="">პროექტების ნახვა</p>
+              </Link>
             </div>
           </div>
           <div className=" w-[50%] flex items-center justify-center sm:hidden">

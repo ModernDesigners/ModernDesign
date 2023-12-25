@@ -18,6 +18,7 @@ interface IProject {
 export default function Projects(props: {
   setShowImages: Function;
   setIsShowImagesActive: Function;
+  setCurrentProject: Function;
 }) {
   return (
     <div className="ProjectsSection relative min-h-screen overflow-hidden pb-56">
@@ -36,6 +37,8 @@ export default function Projects(props: {
               }}
               setShowImages={props.setShowImages}
               setIsShowImagesActive={props.setIsShowImagesActive}
+              setCurrentProject={props.setCurrentProject}
+              currentProject={e.PName}
             />
           ))}
         </div>

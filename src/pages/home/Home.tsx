@@ -7,6 +7,7 @@ import Hero from "./Hero";
 export default function Home(props: {
   setShowImages: Function;
   setIsShowImagesActive: Function;
+  setCurrentProject: Function;
 }) {
   return (
     <>
@@ -14,6 +15,7 @@ export default function Home(props: {
       <Projects
         setShowImages={props.setShowImages}
         setIsShowImagesActive={props.setIsShowImagesActive}
+        setCurrentProject={props.setCurrentProject}
       />
       <Experience />
       <Service />

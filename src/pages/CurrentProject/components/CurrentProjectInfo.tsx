@@ -35,12 +35,26 @@ export default function CurrentProjectInfo(props: { ProjectName?: string }) {
         </div>
         <div className="w-full">
           <div className="flex gap-5">
-            <button className="w-[50%] rounded-md p-1.5 text-white bg-purple ">
-              ნახვა
-            </button>
-            <button className="w-[50%] rounded-md p-1.5 text-white bg-subBlack">
-              GITHUB
-            </button>
+            {currentProjectFilter[0].LiveLink !== "" ? (
+              <a
+                href={currentProjectFilter[0].LiveLink}
+                className="w-[50%] rounded-md"
+              >
+                <button className="w-full rounded-md p-1.5 text-white bg-purple ">
+                  ნახვა
+                </button>
+              </a>
+            ) : null}
+            {currentProjectFilter[0].GitLink !== "" ? (
+              <a
+                href={currentProjectFilter[0].GitLink}
+                className="w-[50%] rounded-md"
+              >
+                <button className="w-full rounded-md p-1.5 text-white bg-subBlack">
+                  GITHUB
+                </button>
+              </a>
+            ) : null}
           </div>
           <button className="w-full mt-2 bg-greenButton rounded-md p-1.5 text-white">
             სრული ფოტო

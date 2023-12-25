@@ -1,20 +1,27 @@
 import project1 from "../images/projects/project1.webp";
 import project2 from "../images/projects/project2.webp";
 import project3 from "../images/projects/project3.webp";
-import project4 from "../images/projects/project4.webp";
 import project5 from "../images/projects/project5.webp";
 import project6 from "../images/projects/project6.webp";
 import project7 from "../images/projects/project7.webp";
 import project8 from "../images/projects/project8.webp";
-import project9 from "../images/projects/project9.webp";
-import project10 from "../images/projects/project10.webp";
 import project11 from "../images/projects/project11.webp";
 import project12 from "../images/projects/project12.webp";
 import project13 from "../images/projects/project13.webp";
 import project14 from "../images/projects/project14.webp";
 import project15 from "../images/projects/project15.webp";
 import project16 from "../images/projects/project16.webp";
+import FoodMart from "../images/projects/FoodMart.webp";
+import FrightLand from "../images/projects/FrightLand.webp";
+import HooBank from "../images/projects/HooBank.webp";
+import MovieWeb from "../images/projects/MovieWeb.webp";
+import Luxury from "../images/projects/Luxury.webp";
+import Nava from "../images/projects/Nava.webp";
+import FurniroShop from "../images/projects/FurniroShop.webp";
 
+// PType = 0 დიზაინი
+// PType = 1 საიტი
+// PType = 2 ორივვე
 const ProjectsArray = [
   {
     PName: "MODERN SCROLL",
@@ -217,6 +224,88 @@ const ProjectsArray = [
     image: project16,
     LiveLink: "https://lukafexshvelashvili.github.io/Rations/",
     GitLink: "https://github.com/LukaFexshvelashvili/Rations",
+    Team: 0,
+    showImages: [""],
+  },
+  //
+  //
+  //
+  //
+  {
+    PName: "MovieWeb",
+    PLangs: ["REACT", "SCSS"],
+    PType: 1,
+    ProjectId: 50,
+    image: MovieWeb,
+    LiveLink: "https://atukajikuridze.github.io/MovieWeb/",
+    GitLink: "https://github.com/AtukaJikuridze/movieweb",
+    Team: 0,
+    showImages: [""],
+  },
+  {
+    PName: "HooBank",
+    PLangs: ["REACT", "SCSS"],
+    PType: 1,
+    ProjectId: 51,
+    image: HooBank,
+    LiveLink: "https://atukajikuridze.github.io/hoobank/",
+    GitLink: "https://github.com/AtukaJikuridze/HooBank",
+    Team: 0,
+    showImages: [""],
+  },
+  {
+    PName: "FrightLand",
+    PLangs: ["HTML", "CSS", "JS", "JQUERY"],
+    PType: 1,
+    ProjectId: 52,
+    image: FrightLand,
+    LiveLink: "https://atukajikuridze.github.io/FrightLand/",
+    GitLink: "https://github.com/AtukaJikuridze/FrightLand",
+    Team: 0,
+    showImages: [""],
+  },
+  {
+    PName: "FoodMart",
+    PLangs: ["REACT", "SCSS"],
+    PType: 1,
+    ProjectId: 53,
+    image: FoodMart,
+    LiveLink: "https://atukajikuridze.github.io/FoodMart/",
+    GitLink: "https://github.com/AtukaJikuridze/FoodMart",
+    Team: 0,
+    showImages: [""],
+  },
+
+  {
+    PName: "Luxury",
+    PLangs: ["HTML", "SCSS", "JQUERY"],
+    PType: 1,
+    ProjectId: 56,
+    image: Luxury,
+    LiveLink: "https://atukajikuridze.github.io/Luxury/",
+    GitLink: "https://github.com/AtukaJikuridze/Luxury",
+    Team: 0,
+    showImages: [""],
+  },
+  {
+    PName: "NAVA",
+    PLangs: ["HTML", "SCSS", "JQUERY"],
+    PType: 1,
+    ProjectId: 57,
+    image: Nava,
+    LiveLink: "https://atukajikuridze.github.io/Nava/",
+    GitLink: "https://github.com/AtukaJikuridze/Nava",
+    Team: 0,
+    showImages: [""],
+  },
+  {
+    PName: "FurniroShop",
+    PLangs: ["REACT", "SCSS"],
+    PType: 1,
+    ProjectId: 59,
+    image: FurniroShop,
+    LiveLink: "https://atukajikuridze.github.io/FurniroShop/",
+    GitLink: "https://github.com/AtukaJikuridze/FurniroShop",
     Team: 0,
     showImages: [""],
   },

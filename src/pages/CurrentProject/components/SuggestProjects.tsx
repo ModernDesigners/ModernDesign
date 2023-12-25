@@ -1,25 +1,25 @@
 import projects from "../../../assets/arrays/projects";
 import ProjectCard from "../../../components/ProjectCard";
-import CurrentProject from "../CurrentProject";
 
 interface ProjectCardInterface {
   setShowImages: Function;
   setIsShowImagesActive: Function;
   setCurrentProject: Function;
-  currentProject: string;
 }
 export default function SuggestProjects({
   setShowImages,
   setCurrentProject,
   setIsShowImagesActive,
-  currentProject,
 }: ProjectCardInterface) {
+  const randRange = Math.floor(Math.random() * (projects.length - 3));
+  console.log(randRange);
+
   return (
     <div className=" contentContainer mt-6">
       <h1 className="mb-5 text-xl">სხვა პროექტები :</h1>
 
       <div className="flex gap-[2%]">
-        {projects.slice(0, 3).map((e) => (
+        {projects.slice(randRange, randRange + 3).map((e) => (
           <ProjectCard
             image={e.image}
             showImages={{
@@ -29,7 +29,7 @@ export default function SuggestProjects({
             setShowImages={setShowImages}
             setIsShowImagesActive={setIsShowImagesActive}
             setCurrentProject={setCurrentProject}
-            currentProject={currentProject}
+            currentProject={e.PName}
           />
         ))}
       </div>

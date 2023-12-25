@@ -4,19 +4,19 @@ const navLinks: {
 }[] = [
   {
     name: "მთავარი",
-    link: "/ModernDesign/",
+    link: "/Home",
   },
   {
     name: "პროექტები",
-    link: "/ModernDesign/Projects",
+    link: "Projects",
   },
   {
     name: "გამოცდილება",
-    link: "/ModernDesign/Experience",
+    link: "Experience",
   },
   {
     name: "სერვისები",
-    link: "/ModernDesign/Services",
+    link: "Services",
   },
 ];
 

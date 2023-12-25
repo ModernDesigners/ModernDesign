@@ -19,7 +19,7 @@ export default function ProjectCard(props: {
     props.setCurrentProject(props.currentProject);
   };
   return (
-    <div className="w-[32%] h-[230px] lg:w-[47%] sm:h-[200px] sm:!w-[100%] rounded-2xl group shadow-projectCard overflow-hidden flex-shrink-0 relative cursor-pointer flex items-center justify-center  ">
+    <div className="w-[32%] h-[250px] lg:w-[47%] sm:h-[200px] sm:!w-[100%] rounded-2xl group shadow-projectCard overflow-hidden flex-shrink-0 relative cursor-pointer flex items-center justify-center  ">
       <img
         className="transition-transform duration-300 ease-in-out h-full w-full object-cover group-hover:scale-110"
         src={props.image}
@@ -32,10 +32,7 @@ export default function ProjectCard(props: {
         >
           ფოტოების ნახვა
         </button>
-        <Link
-          to={`/ModernDesign/Projects/${props.currentProject}`}
-          className="w-[48%]"
-        >
+        <Link to={`/Projects/${props.currentProject}`} className="w-[48%]">
           <button
             onClick={showDetails}
             className="bg-blueButton text-white w-[100%] p-1.5 rounded-md 2xl:text-sm md:w-full md:mb-2 md:py-2 sm:!w-[49%] sm:p-4 "
