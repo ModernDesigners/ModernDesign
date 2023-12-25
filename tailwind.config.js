@@ -40,6 +40,7 @@ export default {
         opaBlack: "rgba(0, 0, 0, 0.30)",
         blueButtonTransparent: "rgba(30, 106, 255, 0.1)",
         blueButton: "rgba(30, 106, 255, 1)",
+        greenButton: "rgba(0, 231, 175, 1)",
       },
       fontFamily: {
         main: ["mainGeo"],

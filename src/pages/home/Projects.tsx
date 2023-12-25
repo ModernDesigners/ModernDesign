@@ -15,7 +15,10 @@ interface IProject {
 }
 [];
 
-export default function Projects() {
+export default function Projects(props: {
+  setShowImages: Function;
+  setIsShowImagesActive: Function;
+}) {
   return (
     <div className="ProjectsSection relative min-h-screen overflow-hidden pb-56">
       <Blocks2 className="w-full pointer-events-none objCurves" />
@@ -24,7 +27,16 @@ export default function Projects() {
 
         <div className="flex gap-3 justify-center mt-16 flex-wrap md:gap-3">
           {ProjectsArray.slice(0, 9).map((e: IProject, i: number) => (
-            <ProjectCard key={i} image={e.image} />
+            <ProjectCard
+              key={i}
+              image={e.image}
+              showImages={{
+                title: e.PName,
+                images: ["", ""],
+              }}
+              setShowImages={props.setShowImages}
+              setIsShowImagesActive={props.setIsShowImagesActive}
+            />
           ))}
         </div>
         <button className="defButton block m-auto mt-10">ყველას ნახვა</button>

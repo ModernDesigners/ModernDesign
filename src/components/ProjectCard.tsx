@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function ProjectCard(props: {
   image: string;
   showImages: {
@@ -6,10 +8,15 @@ export default function ProjectCard(props: {
   };
   setShowImages: Function;
   setIsShowImagesActive: Function;
+  setCurrentProject: Function;
+  currentProject: string;
 }) {
   const showImages = () => {
     props.setShowImages(props.showImages);
     props.setIsShowImagesActive(true);
+  };
+  const showDetails = () => {
+    props.setCurrentProject(props.currentProject);
   };
   return (
     <div className="w-[32%] h-[230px] lg:w-[47%] sm:h-[200px] sm:!w-[100%] rounded-2xl group shadow-projectCard overflow-hidden flex-shrink-0 relative cursor-pointer flex items-center justify-center  ">
@@ -25,12 +32,17 @@ export default function ProjectCard(props: {
         >
           ფოტოების ნახვა
         </button>
-        <button
-          onClick={showImages}
-          className="bg-blueButton text-white w-[48%] p-1.5 rounded-md 2xl:text-sm md:w-full md:mb-2 md:py-2 sm:!w-[49%] sm:p-4 "
+        <Link
+          to={`/ModernDesign/Projects/${props.currentProject}`}
+          className="w-[48%]"
         >
-          დეტალები
-        </button>
+          <button
+            onClick={showDetails}
+            className="bg-blueButton text-white w-[100%] p-1.5 rounded-md 2xl:text-sm md:w-full md:mb-2 md:py-2 sm:!w-[49%] sm:p-4 "
+          >
+            დეტალები
+          </button>
+        </Link>
       </div>
       <div className="absolute transition-opacity duration-300 h-full w-full top-0 left-0 z-10 bg-gradient-to-b from-transparent via-transparent to-opaBlack group-hover:opacity-0"></div>
     </div>

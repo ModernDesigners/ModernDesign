@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { IiconBG } from "../assets/icons/icons";
 import navLinks from "./Navlinks";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [navActive, setNavActive] = useState(0);
@@ -45,22 +46,24 @@ export default function Navbar() {
         </div>
         <ul className="  inline-flex items-center gap-7 md:flex-col md:gap-2">
           {navButtons.map((e, i) => (
-            <li
-              onClick={() => setIsNavbarOpen(false)}
-              className={` h-[60px] relative text-mainBlack flex  before:w-full items-center text-base before:transition-transform before:duration-300 before:origin-left before:content-[''] before:absolute before:bottom-0 before:h-[2px] rounded-lg before:rounded before:bg-main before:scale-x-0 ${
-                navActive == i ? " before:scale-x-100" : " before:scale-x-0"
-              }`}
-              key={i}
-            >
-              <p
-                className={` font-semibold cursor-pointer transition-colors duration-300 ${
-                  navActive == i ? "text-main" : ""
+            <Link to={e.link}>
+              <li
+                onClick={() => setIsNavbarOpen(false)}
+                className={` h-[60px] relative text-mainBlack flex  before:w-full items-center text-base before:transition-transform before:duration-300 before:origin-left before:content-[''] before:absolute before:bottom-0 before:h-[2px] rounded-lg before:rounded before:bg-main before:scale-x-0 ${
+                  navActive == i ? " before:scale-x-100" : " before:scale-x-0"
                 }`}
-                onClick={() => setNavActive(i)}
+                key={i}
               >
-                {e.name}
-              </p>
-            </li>
+                <p
+                  className={` font-semibold cursor-pointer transition-colors duration-300 ${
+                    navActive == i ? "text-main" : ""
+                  }`}
+                  onClick={() => setNavActive(i)}
+                >
+                  {e.name}
+                </p>
+              </li>
+            </Link>
           ))}
         </ul>
       </div>

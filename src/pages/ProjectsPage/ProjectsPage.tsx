@@ -6,6 +6,7 @@ import ProjectsPageHeader from "./components/ProjectsPageHeader";
 export default function ProjectsPage(props: {
   setShowImages: Function;
   setIsShowImagesActive: Function;
+  setCurrentProject: Function;
 }) {
   const options = [
     {
@@ -37,6 +38,8 @@ export default function ProjectsPage(props: {
             showImages={{ title: e.PName, images: e.showImages }}
             setShowImages={props.setShowImages}
             setIsShowImagesActive={props.setIsShowImagesActive}
+            setCurrentProject={props.setCurrentProject}
+            currentProject={e.PName}
           />
         ))}
       </div>

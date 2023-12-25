@@ -1,10 +1,11 @@
 import a from "../assets/images/projects/project1.webp";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function ShowProjectImages(props: {
   isShowImagesActive: boolean;
   setIsShowImagesActive: Function;
+  currentProject: string;
 }) {
-  console.log(props.isShowImagesActive);
   const closeButton = () => {
     props.setIsShowImagesActive(false);
   };
@@ -27,14 +28,21 @@ export default function ShowProjectImages(props: {
           <div className="h-1 w-[35px] -rotate-45 bg-blueButton absolute"></div>
         </div>
       </div>
-      <div className="flex gap-[1%] justify-center">
-        <img src={a} alt="" className="w-[33%] h-[280px] object-cover" />
-        <img src={a} alt="" className="w-[33%] h-[280px] object-cover" />
-        <img src={a} alt="" className="w-[33%] h-[280px] object-cover" />
+      <div className="flex gap-x-[1%] gap-y-[10px] justify-center flex-wrap  h-[300px] overflow-scroll">
+        <img src={a} alt="" className="w-[32%] h-[280px] object-cover" />
+        <img src={a} alt="" className="w-[32%] h-[280px] object-cover" />
+        <img src={a} alt="" className="w-[32%] h-[280px] object-cover" />
+        <img src={a} alt="" className="w-[32%] h-[280px] object-cover" />
+        <img src={a} alt="" className="w-[32%] h-[280px] object-cover" />
       </div>
-      <button className="absolute bottom-5 right-14 bg-blueButton text-white px-5 py-2.5 rounded-md">
-        დეტალების ნახვა
-      </button>
+      <Link
+        to={`ModernDesign/Projects/${props.currentProject}`}
+        onClick={() => props.setIsShowImagesActive(false)}
+      >
+        <button className="absolute bottom-5 right-14 bg-blueButton text-white px-5 py-2.5 rounded-md">
+          დეტალების ნახვა
+        </button>
+      </Link>
     </div>
   );
 }
