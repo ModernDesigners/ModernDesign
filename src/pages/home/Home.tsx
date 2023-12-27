@@ -4,19 +4,11 @@ import Service from "./Service";
 import Contact from "./Contact";
 import Hero from "./Hero";
 
-export default function Home(props: {
-  setShowImages: Function;
-  setIsShowImagesActive: Function;
-  setCurrentProject: Function;
-}) {
+export default function Home(props: { setIsShowImagesActive: Function }) {
   return (
     <>
       <Hero />
-      <Projects
-        setShowImages={props.setShowImages}
-        setIsShowImagesActive={props.setIsShowImagesActive}
-        setCurrentProject={props.setCurrentProject}
-      />
+      <Projects setIsShowImagesActive={props.setIsShowImagesActive} />
       <Experience />
       <Service />
       <Contact />

@@ -255,7 +255,7 @@ const ProjectsArray = [
   },
   {
     PName: "FrightLand",
-    PLangs: ["HTML", "CSS", "JS", "JQUERY"],
+    PLangs: ["HTML", "CSS", "JAVASCRIPT", "JQUERY"],
     PType: 1,
     ProjectId: 52,
     image: FrightLand,

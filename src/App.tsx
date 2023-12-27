@@ -7,16 +7,38 @@ import ShowProjectImages from "./components/ShowProjectImages";
 import { Route, Routes } from "react-router-dom";
 import CurrentProject from "./pages/CurrentProject/CurrentProject";
 
-export const userContext = createContext<any>(null);
+type TUserContext = {
+  navActive: number;
+  setNavActive: React.Dispatch<React.SetStateAction<number>>;
+  activeProject: {
+    images: string[];
+    name: null | string;
+  };
+  setactiveProject: React.Dispatch<
+    React.SetStateAction<{
+      images: string[];
+      name: null | string;
+    }>
+  >;
+};
+
+export const userContext = createContext<TUserContext | null>(null);
 
 function App() {
-  const [showImages, setShowImages] = useState(null);
   const [isShowImagesActive, setIsShowImagesActive] = useState(false);
-  const [currentProject, setCurrentProject] = useState<any>(null);
   const [navActive, setNavActive] = useState(0);
+  const [activeProject, setactiveProject] = useState<{
+    images: string[];
+    name: null | string;
+  }>({
+    images: [],
+    name: null,
+  });
 
   return (
-    <userContext.Provider value={{ navActive, setNavActive }}>
+    <userContext.Provider
+      value={{ navActive, setNavActive, activeProject, setactiveProject }}
+    >
       <Navbar />
       {/* <Home
         setShowImages={setShowImages}
@@ -27,43 +49,22 @@ function App() {
         <Route path="/">
           <Route
             index
-            element={
-              <Home
-                setCurrentProject={setCurrentProject}
-                setShowImages={setShowImages}
-                setIsShowImagesActive={setIsShowImagesActive}
-              />
-            }
+            element={<Home setIsShowImagesActive={setIsShowImagesActive} />}
           />
           <Route
             path="Home"
-            element={
-              <Home
-                setCurrentProject={setCurrentProject}
-                setShowImages={setShowImages}
-                setIsShowImagesActive={setIsShowImagesActive}
-              />
-            }
+            element={<Home setIsShowImagesActive={setIsShowImagesActive} />}
           />
           <Route
             path="Projects"
             element={
-              <ProjectsPage
-                setShowImages={setShowImages}
-                setIsShowImagesActive={setIsShowImagesActive}
-                setCurrentProject={setCurrentProject}
-              />
+              <ProjectsPage setIsShowImagesActive={setIsShowImagesActive} />
             }
           />
           <Route
             path="Projects/:ProjectName"
             element={
-              <CurrentProject
-                setShowImages={setShowImages}
-                setIsShowImagesActive={setIsShowImagesActive}
-                setCurrentProject={setCurrentProject}
-                currentProject={""}
-              />
+              <CurrentProject setIsShowImagesActive={setIsShowImagesActive} />
             }
           />
         </Route>
@@ -72,7 +73,6 @@ function App() {
       <ShowProjectImages
         isShowImagesActive={isShowImagesActive}
         setIsShowImagesActive={setIsShowImagesActive}
-        currentProject={currentProject}
       />
       {/* <Footer /> */}
     </userContext.Provider>

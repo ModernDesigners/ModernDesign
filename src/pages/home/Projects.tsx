@@ -15,11 +15,7 @@ interface IProject {
 }
 [];
 
-export default function Projects(props: {
-  setShowImages: Function;
-  setIsShowImagesActive: Function;
-  setCurrentProject: Function;
-}) {
+export default function Projects(props: { setIsShowImagesActive: Function }) {
   return (
     <div className="ProjectsSection relative min-h-screen overflow-hidden pb-56">
       <Blocks2 className="w-full pointer-events-none objCurves" />
@@ -35,10 +31,7 @@ export default function Projects(props: {
                 title: e.PName,
                 images: ["", ""],
               }}
-              setShowImages={props.setShowImages}
               setIsShowImagesActive={props.setIsShowImagesActive}
-              setCurrentProject={props.setCurrentProject}
-              currentProject={e.PName}
             />
           ))}
         </div>

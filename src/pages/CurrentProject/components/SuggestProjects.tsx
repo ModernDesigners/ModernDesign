@@ -1,18 +1,18 @@
+import { useEffect, useState } from "react";
 import projects from "../../../assets/arrays/projects";
 import ProjectCard from "../../../components/ProjectCard";
 
 interface ProjectCardInterface {
-  setShowImages: Function;
   setIsShowImagesActive: Function;
-  setCurrentProject: Function;
 }
-export default function SuggestProjects({
-  setShowImages,
-  setCurrentProject,
-  setIsShowImagesActive,
-}: ProjectCardInterface) {
-  const randRange = Math.floor(Math.random() * (projects.length - 3));
-  console.log(randRange);
+function SuggestProjects({ setIsShowImagesActive }: ProjectCardInterface) {
+  const [randRange, setRandRange] = useState(
+    Math.floor(Math.random() * (projects.length - 3))
+  );
+
+  useEffect(() => {
+    setRandRange(Math.floor(Math.random() * (projects.length - 3)));
+  }, [location.pathname]);
 
   return (
     <div className=" contentContainer mt-6">
@@ -26,13 +26,11 @@ export default function SuggestProjects({
               title: e.PName,
               images: e.showImages,
             }}
-            setShowImages={setShowImages}
             setIsShowImagesActive={setIsShowImagesActive}
-            setCurrentProject={setCurrentProject}
-            currentProject={e.PName}
           />
         ))}
       </div>
     </div>
   );
 }
+export default SuggestProjects;

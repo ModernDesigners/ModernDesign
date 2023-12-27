@@ -40,7 +40,19 @@ button {
   background: linear-gradient(180deg, #0047ff 0%, #00b0ff 100%);
   color: #3075ff;
 }
-
+.noscroll::-webkit-scrollbar {
+  display: none;
+}
+.Shades {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.Shades.getShades {
+  opacity: 0.25;
+  visibility: visible;
+}
 .contentContainer {
   padding-right: 15px;
   padding-left: 15px;

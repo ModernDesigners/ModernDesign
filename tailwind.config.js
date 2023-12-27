@@ -6,6 +6,8 @@ export default {
       colors: {
         white: "#FFF",
         main: "#1E6AFF",
+        mainWhited: "#F1F6FF",
+        mainWhited2: "#E2ECFF",
         mainHover: "#4F8AFF",
         mainBack: "rgba(31, 105, 255, 0.3)",
         mainBack2: "rgba(31, 105, 255, 0.1)",
@@ -39,6 +41,8 @@ export default {
         subBlack: "rgba(0, 0, 0, 0.60)",
         opaBlack: "rgba(0, 0, 0, 0.30)",
         blueButtonTransparent: "rgba(30, 106, 255, 0.1)",
+        blueButtonTransparentHover: "rgba(30, 106, 255, 0.2)",
+
         blueButton: "rgba(30, 106, 255, 1)",
         greenButton: "rgba(0, 231, 175, 1)",
       },

@@ -1,4 +1,6 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { userContext } from "../App";
 
 export default function ProjectCard(props: {
   image: string;
@@ -6,17 +8,15 @@ export default function ProjectCard(props: {
     title: string;
     images: string[];
   };
-  setShowImages: Function;
   setIsShowImagesActive: Function;
-  setCurrentProject: Function;
-  currentProject: string;
 }) {
-  const showImages = () => {
-    props.setShowImages(props.showImages);
+  const UserContext = useContext(userContext);
+  const showImagesFunction = () => {
     props.setIsShowImagesActive(true);
-  };
-  const showDetails = () => {
-    props.setCurrentProject(props.currentProject);
+    UserContext?.setactiveProject({
+      name: props.showImages.title,
+      images: props.showImages.images,
+    });
   };
   return (
     <div className="w-[32%] h-[250px] lg:w-[47%] sm:h-[200px] sm:!w-[100%] rounded-2xl group shadow-projectCard overflow-hidden flex-shrink-0 relative cursor-pointer flex items-center justify-center  ">
@@ -27,16 +27,13 @@ export default function ProjectCard(props: {
       />
       <div className="flex justify-between  absolute z-[20] bottom-6 w-full px-5  opacity-0 group-hover:opacity-100 transition-all duration-300 md:flex-col sm:!flex-row sm:bottom-0">
         <button
-          onClick={showImages}
+          onClick={showImagesFunction}
           className="bg-blueButton text-white w-[48%] p-1.5 rounded-md 2xl:text-sm md:w-full md:mb-2 md:py-2 sm:!w-[49%] sm:p-4 "
         >
           ფოტოების ნახვა
         </button>
-        <Link to={`/Projects/${props.currentProject}`} className="w-[48%]">
-          <button
-            onClick={showDetails}
-            className="bg-blueButton text-white w-[100%] p-1.5 rounded-md 2xl:text-sm md:w-full md:mb-2 md:py-2 sm:!w-[49%] sm:p-4 "
-          >
+        <Link to={`/Projects/${props.showImages.title}`} className="w-[48%]">
+          <button className="bg-blueButton text-white w-[100%] p-1.5 rounded-md 2xl:text-sm md:w-full md:mb-2 md:py-2 sm:!w-[49%] sm:p-4 ">
             დეტალები
           </button>
         </Link>

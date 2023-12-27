@@ -5,13 +5,11 @@ import ProjectsPageHeader from "./components/ProjectsPageHeader";
 import { userContext } from "../../App";
 
 export default function ProjectsPage(props: {
-  setShowImages: Function;
   setIsShowImagesActive: Function;
-  setCurrentProject: Function;
 }) {
   const navActions = useContext(userContext);
   useEffect(() => {
-    navActions.setNavActive(1);
+    navActions?.setNavActive(1);
     window.scrollTo(0, 0);
   }, []);
   const [filter, setFilter] = useState(-1);
@@ -49,10 +47,7 @@ export default function ProjectsPage(props: {
                   key={i}
                   image={e.image}
                   showImages={{ title: e.PName, images: e.showImages }}
-                  setShowImages={props.setShowImages}
                   setIsShowImagesActive={props.setIsShowImagesActive}
-                  setCurrentProject={props.setCurrentProject}
-                  currentProject={e.PName}
                 />
               ) : null
             )
@@ -61,10 +56,7 @@ export default function ProjectsPage(props: {
                 key={i}
                 image={e.image}
                 showImages={{ title: e.PName, images: e.showImages }}
-                setShowImages={props.setShowImages}
                 setIsShowImagesActive={props.setIsShowImagesActive}
-                setCurrentProject={props.setCurrentProject}
-                currentProject={e.PName}
               />
             ))}
       </div>
