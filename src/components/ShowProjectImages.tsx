@@ -11,6 +11,7 @@ export default function ShowProjectImages(props: {
     props.setIsShowImagesActive(false);
   };
   const UserContext = useContext(userContext);
+
   return (
     <>
       <div
@@ -37,7 +38,7 @@ export default function ShowProjectImages(props: {
           <div className="h-1 w-[30px] rounded-2xl rotate-45 bg-blueButton absolute"></div>
           <div className="h-1 w-[30px] rounded-2xl -rotate-45 bg-blueButton absolute"></div>
         </div>
-        <ImageSlider images={["", "", "", "", ""]} />
+        <ImageSlider UserContext={UserContext} />
 
         <Link
           to={`Projects/${UserContext?.activeProject.name}`}

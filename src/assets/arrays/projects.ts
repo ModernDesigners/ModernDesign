@@ -19,6 +19,24 @@ import Luxury from "../images/projects/Luxury.webp";
 import Nava from "../images/projects/Nava.webp";
 import FurniroShop from "../images/projects/FurniroShop.webp";
 
+import geshop1 from "../images/projects/geshop/1.webp";
+import geshop2 from "../images/projects/geshop/2.webp";
+import geshop3 from "../images/projects/geshop/3.webp";
+import geshop4 from "../images/projects/geshop/4.webp";
+import geshop5 from "../images/projects/geshop/5.webp";
+import geshop6 from "../images/projects/geshop/6.webp";
+import geshop7 from "../images/projects/geshop/7.webp";
+import geshop8 from "../images/projects/geshop/8.webp";
+import geshop9 from "../images/projects/geshop/9.webp";
+import geshop10 from "../images/projects/geshop/10.webp";
+import geshop11 from "../images/projects/geshop/11.webp";
+
+import camp1 from "../images/projects/camp/1.webp";
+import camp2 from "../images/projects/camp/2.webp";
+import camp3 from "../images/projects/camp/3.webp";
+import camp4 from "../images/projects/camp/4.webp";
+import camp5 from "../images/projects/camp/5.webp";
+import camp6 from "../images/projects/camp/6.webp";
 // PType = 0 დიზაინი
 // PType = 1 საიტი
 // PType = 2 ორივვე
@@ -32,7 +50,8 @@ const ProjectsArray = [
     LiveLink: "",
     GitLink: "",
     Team: 0,
-    showImages: [""],
+    showImages: [project1],
+    fullImage: project1,
   },
   {
     PName: "DASHBOARD",
@@ -43,7 +62,8 @@ const ProjectsArray = [
     LiveLink: "",
     GitLink: "",
     Team: 0,
-    showImages: [""],
+    showImages: [project2],
+    fullImage: project2,
   },
   {
     PName: "GESHOP",
@@ -60,11 +80,24 @@ const ProjectsArray = [
     ],
     PType: 2,
     ProjectId: 3,
-    image: project3,
+    image: geshop1,
     LiveLink: "",
     GitLink: "",
     Team: 0,
-    showImages: [""],
+    showImages: [
+      geshop1,
+      geshop2,
+      geshop3,
+      geshop4,
+      geshop5,
+      geshop6,
+      geshop7,
+      geshop8,
+      geshop9,
+      geshop10,
+      geshop11,
+    ],
+    fullImage: geshop1,
   },
   // {
   //   PName: "GAME SHOP",
@@ -76,6 +109,7 @@ const ProjectsArray = [
   //   GitLink: "",
   //   Team: 0,
   //   showImages:[""]
+
   // },
   {
     PName: "CAMP WEB",
@@ -86,7 +120,8 @@ const ProjectsArray = [
     LiveLink: "https://lukafexshvelashvili.github.io/CampWebsite-React-TS/",
     GitLink: "https://github.com/LukaFexshvelashvili/CampWebsite-React-TS",
     Team: 0,
-    showImages: [""],
+    showImages: [project5, camp1, camp2, camp3, camp4, camp5, camp6],
+    fullImage: "",
   },
   {
     PName: "BOOK STORE",
@@ -97,7 +132,8 @@ const ProjectsArray = [
     LiveLink: "https://lukafexshvelashvili.github.io/BookStoreWebsite/",
     GitLink: "https://github.com/LukaFexshvelashvili/BookStoreWebsite",
     Team: 0,
-    showImages: [""],
+    showImages: [project6],
+    fullImage: "",
   },
   {
     PName: "JAEGAR RESTO",
@@ -108,7 +144,8 @@ const ProjectsArray = [
     LiveLink: "https://moderndesigners.github.io/Food-Restaurant/",
     GitLink: "https://github.com/ModernDesigners/Food-Restaurant",
     Team: 1,
-    showImages: [""],
+    showImages: [project7],
+    fullImage: "",
   },
   {
     PName: "MODERN WATCH",
@@ -119,7 +156,8 @@ const ProjectsArray = [
     LiveLink: "https://moderndesigners.github.io/ModernWatch/",
     GitLink: "https://github.com/ModernDesigners/ModernWatch",
     Team: 1,
-    showImages: [""],
+    showImages: [project8],
+    fullImage: "",
   },
   {
     PName: "COLAB WEB",
@@ -130,7 +168,8 @@ const ProjectsArray = [
     LiveLink: "https://lukafexshvelashvili.github.io/ColabWebsite/",
     GitLink: "https://github.com/LukaFexshvelashvili/ColabWebsite",
     Team: 0,
-    showImages: [""],
+    showImages: [project11],
+    fullImage: "",
   },
   // {
   //   PName: "REBOUND ROLEPLAY",
@@ -152,6 +191,7 @@ const ProjectsArray = [
   //   GitLink: "",
   //   Team: 0,
   //   showImages:[""]
+
   // },
   // {
   //   PName: "MODERN DESIGN",
@@ -171,6 +211,7 @@ const ProjectsArray = [
   //   GitLink: "",
   //   Team: 0,
   //  showImages:[""]
+
   // },
   {
     PName: "COELUSO WEB",
@@ -181,7 +222,8 @@ const ProjectsArray = [
     LiveLink: "https://lukafexshvelashvili.github.io/CoelusoWebsite/",
     GitLink: "https://github.com/LukaFexshvelashvili/CoelusoWebsite",
     Team: 0,
-    showImages: [""],
+    showImages: [project12],
+    fullImage: "",
   },
   {
     PName: "AUTO SERVICE",
@@ -192,7 +234,8 @@ const ProjectsArray = [
     LiveLink: "",
     GitLink: "",
     Team: 0,
-    showImages: [""],
+    showImages: [project13],
+    fullImage: "",
   },
   {
     PName: "BRAVAY",
@@ -203,7 +246,8 @@ const ProjectsArray = [
     LiveLink: "https://lukafexshvelashvili.github.io/NFT-Landing-Page/",
     GitLink: "https://github.com/LukaFexshvelashvili/NFT-Landing-Page",
     Team: 0,
-    showImages: [""],
+    showImages: [project14],
+    fullImage: "",
   },
   {
     PName: "EVENTOY",
@@ -214,7 +258,8 @@ const ProjectsArray = [
     LiveLink: "https://lukafexshvelashvili.github.io/Eventoy/",
     GitLink: "https://github.com/LukaFexshvelashvili/Eventoy",
     Team: 0,
-    showImages: [""],
+    showImages: [project15],
+    fullImage: "",
   },
   {
     PName: "RATIONS",
@@ -225,7 +270,8 @@ const ProjectsArray = [
     LiveLink: "https://lukafexshvelashvili.github.io/Rations/",
     GitLink: "https://github.com/LukaFexshvelashvili/Rations",
     Team: 0,
-    showImages: [""],
+    showImages: [project16],
+    fullImage: "",
   },
   //
   //
@@ -240,7 +286,8 @@ const ProjectsArray = [
     LiveLink: "https://atukajikuridze.github.io/MovieWeb/",
     GitLink: "https://github.com/AtukaJikuridze/movieweb",
     Team: 0,
-    showImages: [""],
+    showImages: [MovieWeb],
+    fullImage: "",
   },
   {
     PName: "HooBank",
@@ -251,7 +298,8 @@ const ProjectsArray = [
     LiveLink: "https://atukajikuridze.github.io/hoobank/",
     GitLink: "https://github.com/AtukaJikuridze/HooBank",
     Team: 0,
-    showImages: [""],
+    showImages: [HooBank],
+    fullImage: "",
   },
   {
     PName: "FrightLand",
@@ -262,7 +310,8 @@ const ProjectsArray = [
     LiveLink: "https://atukajikuridze.github.io/FrightLand/",
     GitLink: "https://github.com/AtukaJikuridze/FrightLand",
     Team: 0,
-    showImages: [""],
+    showImages: [FrightLand],
+    fullImage: "",
   },
   {
     PName: "FoodMart",
@@ -273,7 +322,8 @@ const ProjectsArray = [
     LiveLink: "https://atukajikuridze.github.io/FoodMart/",
     GitLink: "https://github.com/AtukaJikuridze/FoodMart",
     Team: 0,
-    showImages: [""],
+    showImages: [FoodMart],
+    fullImage: "",
   },
 
   {
@@ -285,7 +335,8 @@ const ProjectsArray = [
     LiveLink: "https://atukajikuridze.github.io/Luxury/",
     GitLink: "https://github.com/AtukaJikuridze/Luxury",
     Team: 0,
-    showImages: [""],
+    showImages: [Luxury],
+    fullImage: "",
   },
   {
     PName: "NAVA",
@@ -296,7 +347,8 @@ const ProjectsArray = [
     LiveLink: "https://atukajikuridze.github.io/Nava/",
     GitLink: "https://github.com/AtukaJikuridze/Nava",
     Team: 0,
-    showImages: [""],
+    showImages: [Nava],
+    fullImage: "",
   },
   {
     PName: "FurniroShop",
@@ -307,7 +359,8 @@ const ProjectsArray = [
     LiveLink: "https://atukajikuridze.github.io/FurniroShop/",
     GitLink: "https://github.com/AtukaJikuridze/FurniroShop",
     Team: 0,
-    showImages: [""],
+    showImages: [FurniroShop],
+    fullImage: "",
   },
 ];
 

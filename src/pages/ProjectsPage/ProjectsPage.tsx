@@ -42,7 +42,7 @@ export default function ProjectsPage(props: {
       <div className="flex flex-wrap gap-3 justify-center">
         {filter !== -1
           ? ProjectsArray.map((e, i: number) =>
-              e.PType == filter ? (
+              e.PType == filter || e.PType == 2 ? (
                 <ProjectCard
                   key={i}
                   image={e.image}

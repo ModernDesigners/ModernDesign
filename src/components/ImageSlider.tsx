@@ -1,10 +1,9 @@
-import { useRef } from "react";
-import a from "../assets/images/projects/project1.webp";
+import { useEffect, useRef } from "react";
 
-export default function ImageSlider(props: { images: string[] }) {
+export default function ImageSlider(props: { UserContext: any }) {
   const imagesRow = useRef<null | HTMLDivElement>(null);
   const imagesBlock = useRef<null | HTMLImageElement>(null);
-  const getImages: string[] = props.images;
+  const getImages: string[] = props.UserContext.activeProject.images;
   const leftClick = () => {
     if (imagesRow.current && imagesBlock.current) {
       imagesRow.current.scrollBy(-(imagesBlock.current.clientWidth + 20), 0);
@@ -25,7 +24,9 @@ export default function ImageSlider(props: { images: string[] }) {
       }
     }
   };
-
+  useEffect(() => {
+    imagesRow.current?.scrollTo(0, 0);
+  }, [props.UserContext?.activeProject.name]);
   return (
     <div className=" flex items-center relative">
       <button
@@ -48,7 +49,7 @@ export default function ImageSlider(props: { images: string[] }) {
           <img
             key={i}
             ref={imagesBlock}
-            src={a}
+            src={e}
             alt=""
             className="w-[33%] min-w-[350px] h-auto max-h-[300px] object-cover object-top  shrink-0"
           />
