@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ProjectsArray from "../../assets/arrays/projects";
 import Blocks2 from "../../assets/curves/Blocks2";
 import Waves1 from "../../assets/curves/Waves1";
@@ -35,7 +36,9 @@ export default function Projects(props: { setIsShowImagesActive: Function }) {
             />
           ))}
         </div>
-        <button className="defButton block m-auto mt-10">ყველას ნახვა</button>
+        <Link to={"/Projects"}>
+          <button className="defButton block m-auto mt-10">ყველას ნახვა</button>
+        </Link>
       </div>
       <Waves1 className="w-full pointer-events-none absolute bottom-0 objCurves" />
     </div>

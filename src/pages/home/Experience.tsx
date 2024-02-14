@@ -11,7 +11,7 @@ interface ITechnology {
 
 export default function Experience() {
   return (
-    <div className="ExperienceSection pb-40 bg-experienceBg py-10">
+    <div className="ExperienceSection pb-40 bg-experienceBg py-10 md:pt-24">
       <div className="contentContainer">
         <div className="flex items-center">
           <h1 className="text-white text-2xl pr-8">გამოცდილება</h1>

@@ -6,6 +6,8 @@ import { createContext, useState } from "react";
 import ShowProjectImages from "./components/ShowProjectImages";
 import { Route, Routes } from "react-router-dom";
 import CurrentProject from "./pages/CurrentProject/CurrentProject";
+import Experience from "./pages/home/Experience";
+import Service from "./pages/home/Service";
 
 type TUserContext = {
   navActive: number;
@@ -61,6 +63,14 @@ function App() {
               <ProjectsPage setIsShowImagesActive={setIsShowImagesActive} />
             }
           />
+          <Route
+            path="Projects/:ProjectName"
+            element={
+              <CurrentProject setIsShowImagesActive={setIsShowImagesActive} />
+            }
+          />
+          <Route path="Experience" element={<Experience />} />
+          <Route path="Services" element={<Service />} />
           <Route
             path="Projects/:ProjectName"
             element={

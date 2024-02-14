@@ -17,7 +17,7 @@ export interface IServiceCard {
 
 export default function Service() {
   return (
-    <div className="ServiceSection relative bg-gradient-to-r from-[#002032] to-[#1C0032] min-h-screen pb-56">
+    <div className="ServiceSection relative bg-gradient-to-r from-[#002032] to-[#1C0032] min-h-screen pb-56 md:pt-14">
       <Waves2 />
       <div className="contentContainer my-10">
         <h1 className="text-white text-center text-[40px] tracking">

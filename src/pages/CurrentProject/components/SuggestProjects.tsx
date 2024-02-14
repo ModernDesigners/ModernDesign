@@ -18,7 +18,7 @@ function SuggestProjects({ setIsShowImagesActive }: ProjectCardInterface) {
     <div className=" contentContainer mt-6">
       <h1 className="mb-5 text-xl">სხვა პროექტები :</h1>
 
-      <div className="flex gap-[2%]">
+      <div className="flex gap-[2%] lg:flex-col lg:items-center lg:[&_.projectCard]:w-[80%] lg:gap-12 ">
         {projects.slice(randRange, randRange + 3).map((e) => (
           <ProjectCard
             image={e.image}

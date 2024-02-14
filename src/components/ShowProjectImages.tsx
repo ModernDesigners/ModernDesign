@@ -32,7 +32,7 @@ export default function ShowProjectImages(props: {
         </div>
 
         <div
-          className=" bg-blueButtonTransparent h-[50px] aspect-square rounded-2xl flex justify-center items-center flex-col cursor-pointer absolute top-6 right-6 transition-colors duration-300 hover:bg-blueButtonTransparentHover"
+          className=" bg-blueButtonTransparent h-[50px] aspect-square rounded-2xl flex justify-center items-center flex-col cursor-pointer absolute top-6 right-6 transition-colors duration-300 hover:bg-blueButtonTransparentHover "
           onClick={closeButton}
         >
           <div className="h-1 w-[30px] rounded-2xl rotate-45 bg-blueButton absolute"></div>
@@ -44,7 +44,7 @@ export default function ShowProjectImages(props: {
           to={`Projects/${UserContext?.activeProject.name}`}
           onClick={() => props.setIsShowImagesActive(false)}
         >
-          <button className="absolute bottom-5 right-14 bg-blueButton text-white px-5 py-2.5 rounded-md">
+          <button className="absolute bottom-5 right-14 bg-blueButton text-white px-5 py-2.5 rounded-md sm:w-[200px] sm:left-1/2 sm:transform -translate-x-1/2">
             დეტალების ნახვა
           </button>
         </Link>

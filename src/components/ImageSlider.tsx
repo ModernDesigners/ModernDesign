@@ -31,27 +31,27 @@ export default function ImageSlider(props: { UserContext: any }) {
     <div className=" flex items-center relative">
       <button
         onClick={leftClick}
-        className=" transition-colors duration-200  hover:bg-mainWhited flex [&>svg]:h-12 justify-center items-center h-16 aspect-square rounded-full bg-white shadow-[0px_0px_20px_rgba(30,106,255,0.25)] absolute left-0 translate-x-[-50%] cursor-pointer active:bg-mainWhited2"
+        className=" sm:hidden transition-colors duration-200  hover:bg-mainWhited flex [&>svg]:h-12 justify-center items-center h-16 aspect-square rounded-full bg-white shadow-[0px_0px_20px_rgba(30,106,255,0.25)] absolute left-0 translate-x-[-50%] cursor-pointer active:bg-mainWhited2"
       >
         {icons.leftIcon}
       </button>
       <button
         onClick={rightClick}
-        className=" transition-colors duration-200 hover:bg-mainWhited flex [&>svg]:h-12 justify-center items-center h-16 aspect-square rounded-full bg-white shadow-[0px_0px_20px_rgba(30,106,255,0.25)] absolute right-0 translate-x-[50%] cursor-pointer active:bg-mainWhited2"
+        className=" sm:hidden transition-colors duration-200 hover:bg-mainWhited flex [&>svg]:h-12 justify-center items-center h-16 aspect-square rounded-full bg-white shadow-[0px_0px_20px_rgba(30,106,255,0.25)] absolute right-0 translate-x-[50%] cursor-pointer active:bg-mainWhited2"
       >
         {icons.rightIcon}
       </button>
       <div
         ref={imagesRow}
-        className="flex gap-x-[20px] flex-nowrap overflow-hidden noscroll scroll-smooth w-full"
+        className="flex gap-x-[20px] flex-nowrap overflow-hidden noscroll scroll-smooth w-full sm:overflow-scroll"
       >
         {getImages.map((e: string, i: number) => (
           <img
+            className="sm:h-[170px]"
             key={i}
             ref={imagesBlock}
             src={e}
             alt=""
-            className="w-[33%] min-w-[350px] h-auto max-h-[300px] object-cover object-top  shrink-0"
           />
         ))}
       </div>
